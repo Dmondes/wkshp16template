@@ -29,5 +29,11 @@ public class RedisController {
         config.put("password", "***"); // Don't expose actual password
         return config;
     }
+    
+    @GetMapping("/test")
+    public String test() {
+        return "Redis Controller is working!";
+    }
+
 }
   
